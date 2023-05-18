@@ -1,0 +1,612 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+}
+
+
+*,
+*: before,
+*: after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+
+/* container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    background: url("../images/photo1.jpg") center no-repeat;
+    background-size: cover;
+}
+ .intro__title {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: .2;
+    animation: colorchange 7s infinite;
+}
+@keyframes colorchange {
+            0% {
+                color: #fff;
+            }
+            25% {
+                color: #FFE5FF;
+            }
+            50% {
+                color: #ca146b;
+            }
+            75% {
+                color: #FFE5FF;
+            }
+            100% {
+                color: #fff;
+            }
+}
+
+.intro__photo {
+    display: block;
+    margin-top: -100px;
+    margin-left: 620px;
+    margin-right: 620px;
+    padding-top: 170px; 
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.container__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-left: 180px;
+    font-size: 14px;
+    text-transform: uppercase;
+    align-content: center;
+    
+    margin-top: 20px;
+}
+
+.nav__link {
+    display: flex;
+    vertical-align: top;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    
+    transition: color .2s linear;
+}
+
+.nav__link:hover {
+    color: #ca146b;
+}
+
+/* SECTION 1 */
+
+.discription {
+    width: 100%;
+    height: 610px;
+    background-color: white;
+}
+.dscrptn__slogan {
+    font-family: 'Shantell Sans', cursive; /* ПОМЕНЯТЬ ШРИФТ */
+    color: #ca146b;
+    font-weight: 300;
+    font-size: 54px;
+    text-align: center;
+    margin-top: 100px;
+    
+    position: relative;
+    display: flex; /* элемент flex-контейнер */
+    justify-content: center;
+}
+
+.dscrptn__slogan:after{ 
+  content: " ";
+  background: #FFE5FF;
+  width: 170px;
+  height: 6px;
+  bottom: -30px;
+  position: absolute;
+}
+
+.dscrptn__text {
+    display: flex; /* элемент flex-контейнер */
+    justify-content: center;
+    padding: 0 150px 0 140px;
+    margin: 0;
+    
+    color: black;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+/* Button */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding: 8px 30px;
+    margin: 0 auto;
+    width: 230px;
+    
+    border-radius: 30px;
+    border: 3px solid #ca146b;
+    
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    transition: background .1s linear,
+    color .1s linear;
+}
+
+.btn:hover {
+    background-color: #FFE5FF;
+    color: #ca146b;
+    border-color: #FFE5FF;
+}
+
+/* section 2 */
+
+.koncert {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    column-gap: 0;
+}
+
+.photos__kncrt {
+    flex: 1 1 auto;
+    column-width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+/* section 3 */
+
+.teem {
+    width: 100%;
+    height: 1430px;
+    margin-top: 60px;
+    
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ca146b;
+    
+}
+
+/* OLGA */
+.prepod__Olga {
+    background-color: white;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 1250px;
+}
+
+.prepod__text{
+    text-align: left;
+    font-size: 27px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: black;
+}
+
+.prepod__text1 {
+    text-align: left;
+    font-size: 23px;
+    margin-left: 0; 
+    font-weight: 300;
+    color: black;
+}
+
+.prepod__text2 {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 200;
+    color: black;
+}
+
+/*TANYA*/
+.prepod__Tanya {
+    background-color: white;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 1250px;
+}
+
+/*TAT'YANA GRADUSOVA*/
+.prepod__TG {
+    background-color: white;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 1250px;
+}
+
+/*NESTEROVICH*/
+.prepod__Nest {
+    background-color: white;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 1250px;
+}
+
+.Nest__text {
+    text-align: left;
+    font-size: 27px;
+    margin-left: 0;
+    margin-top: 1px;
+    font-weight: 500;
+    color: black;
+}
+
+.Nest__text1 {
+    text-align: left;
+    font-size: 23px;
+    margin-left: 0; 
+    font-weight: 300;
+    color: black;
+}
+
+/* VIDEO */
+
+.video {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-wrap: wrap;
+    column-gap: 0;
+    width: 100%;
+    height: 480px;
+}
+
+.text__video {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #ca146b;
+}
+
+/* Programm */
+
+.programm {
+    white-space: nowrap;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.prgrm__item {
+    white-space: normal;	
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+	background: white;
+    
+}
+
+.textcols .textcols-item:first-child {
+	margin-right: 4%;
+}
+
+/* Audio */
+
+.audio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+
+.audio__text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #ca146b;
+}
+
+/* PRICE */
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 460px;
+    
+    margin-top: 100px;
+    margin-bottom: 0; 
+}
+
+.price1 {
+    background: white;
+    width: 320px;
+    height: 260px;
+    margin-left: 300px;
+    
+    border: 9px solid #FFE5FF;
+    border-radius: 40px;
+}
+
+.price1:hover {
+    background-color: #FFE5FF;
+    transition: background .1s linear,
+    color .1s linear;
+}
+
+.price2 {
+    background: white;
+    width: 320px;
+    height: 260px;
+    margin-right: 300px;
+    
+    border: 9px solid #FFE5FF;
+    border-radius: 40px;
+}
+
+.price2:hover {
+    background-color: #FFE5FF;
+    transition: background .1s linear,
+    color .1s linear;
+}
+
+.price__text {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: black;
+}
+
+.price__text1 {
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    
+}
+
+/* Advantages */
+
+.adv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+    
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+.adv1 {
+    background: #FFE5FF;
+    width: 420px;
+    height: 420px;
+    margin-left: 35px;
+}
+
+.adv2 {
+    background: #FFE5FF;
+    width: 420px;
+    height: 420px;
+}
+
+.adv3 {
+    background: #FFE5FF;
+    width: 420px;
+    height: 420px;
+    margin-right: 35px;
+}
+
+.adv__text {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: black;
+    
+    padding-bottom: 10px;
+  /* необходим для формирования позиций линии */
+  position: relative;
+  /* весь блок будет занимать ширину по размеру контента в нём */
+  display: flex;
+    justify-content: center;
+
+}
+
+.adv__text:after{ 
+  content: " ";
+  background: #ca146b;
+  width: 320px;
+  height: 2.5px;
+  /* располагаем линию сверху от текста */
+  bottom: -0.5px;
+  /* включаем абсолютное позиционирование относительно блока с relative */
+  position: absolute;
+}
+
+.adv__text1 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 16px;
+    margin-right: 15px;
+    color: black;
+}
+
+.adv__text2 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 16px;
+    margin-right: 15px;
+    color: black;
+}
+
+.adv__text3 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 16px;
+    margin-right: 15px;
+    color: black;
+}
+
+
+/* CONTACTS */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    
+    margin-top: 40px;
+    margin-bottom: -12px; 
+}
+
+.contact1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    
+    margin-top: 6px;
+    margin-bottom: 0; 
+}
+
+.contact__text {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #ca146b;
+}
+
+.nomer {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+
+.contact2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    
+    margin-top: 10px;
+    margin-bottom: -10px; 
+}
+
+.address {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: black;
+}
+
+/* BUTTON1 */
+
+.contact3 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    
+    margin-top: 0;
+    margin-bottom: 60px; 
+}
+
+.circle1 {
+    background-color: #FFE5FF;
+    border-radius: 80px;
+    height: 72px;
+    width: 72px;
+    
+    margin-left: 550px;
+}
+
+.circle2 {
+    background-color: #FFE5FF;
+    border-radius: 80px;
+    height: 72px;
+    width: 72px;
+}
+
+.circle3 {
+    background-color: #FFE5FF;
+    border-radius: 80px;
+    height: 72px;
+    width: 72px;
+    
+    margin-right: 550px;
+}
