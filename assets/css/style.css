@@ -315,9 +315,6 @@ h1,h2,h3,h4,h5,h6 {
         justify-content: center;
         position: relative;
         
-        max-width: 600px;
-        padding-top: 56.25%;
-        height: 600px;
     }
     
     .intro__logo {
@@ -331,19 +328,19 @@ h1,h2,h3,h4,h5,h6 {
         position: absolute;
         width: 100%;
         
-        margin-top: -300px;
+        margin-top: -100px;
         
     }
     
     .intro__title {
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
         line-height: .2;
         animation: colorchange 7s infinite;
         
         position: absolute;
         
-        margin-top: 10px;
+        margin-top: 190px;
     }
     
     .header {
