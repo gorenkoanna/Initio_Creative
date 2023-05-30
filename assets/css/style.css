@@ -325,9 +325,7 @@ h1,h2,h3,h4,h5,h6 {
     }
 
     .intro__photo {
-        position: absolute;
         width: 100%;
-        
         margin-top: -100px;
         
     }
@@ -335,7 +333,6 @@ h1,h2,h3,h4,h5,h6 {
     .intro__title {
         font-size: 25px;
         text-align: center;
-        line-height: .2;
         animation: colorchange 7s infinite;
         
         position: absolute;
