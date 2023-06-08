@@ -152,7 +152,6 @@ h1,h2,h3,h4,h5,h6 {
     }
 
     .intro__photo {
-        position: absolute;
         width: 100%;
         
         margin-top: -170px;
@@ -240,7 +239,7 @@ h1,h2,h3,h4,h5,h6 {
     }
 
     .intro__photo {
-        position: absolute;
+
         width: 100%;
         
         margin-top: -130px;
@@ -304,7 +303,7 @@ h1,h2,h3,h4,h5,h6 {
 @media only screen and (max-width:960px) {
     
     .intro {
-        background-image: url("../images/photo01.jpg");
+        background-image: url("../images/photo8.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -333,10 +332,11 @@ h1,h2,h3,h4,h5,h6 {
     .intro__title {
         font-size: 25px;
         text-align: center;
+
         animation: colorchange 7s infinite;
-   
+        position: absolute;
         
-        margin-top: 220px;
+        margin-top: 190px;
     }
     
     .header {
@@ -1036,7 +1036,7 @@ h1,h2,h3,h4,h5,h6 {
         text-align: center;
         color: #ca146b;
         font-weight: 600;
-        font-size: 10px;
+        font-size: 11px;
         
         margin-left: 32px;
     }
@@ -1645,39 +1645,38 @@ h1,h2,h3,h4,h5,h6 {
         display: flex;
         justify-content: space-around;
         width: 100%;
-        height: 130px;
+        height: 280px;
 
-        margin-top: 20px;
+        margin-top: 15px;
         margin-bottom: 0;
         flex-wrap: wrap;
+        align-items: center;
     }
 
     .adv1 {
         background: #FFE5FF;
-        width: 120px;
-        height: 110px;
-        margin-left: 2px;
+        width: 170px;
+        height: 120px;
+        margin-left: 0;
     }
 
     .adv2 {
         background: #FFE5FF;
-        width: 120px;
-        height: 110px;
+        width: 170px;
+        height: 120px;
         
-        margin-left: -2px;
-        margin-right: -2px;
     }
 
     .adv3 {
         background: #FFE5FF;
-        width: 120px;
-        height: 110px;
-        margin-right: 2px;
+        width: 170px;
+        height: 120px;
+        margin-right: 0;
     }
 
     .adv__text {
         text-align: center;
-        font-size: 8px;
+        font-size: 10px;
         font-weight: 400;
         margin-top: 8px;
         margin-bottom: 1px;
@@ -1693,7 +1692,7 @@ h1,h2,h3,h4,h5,h6 {
     .adv__text:after{ 
       content: " ";
       background: #ca146b;
-      width: 90px;
+      width: 110px;
       height: 1px;
       /* располагаем линию сверху от текста */
       bottom: 3.5px;
@@ -1703,33 +1702,33 @@ h1,h2,h3,h4,h5,h6 {
 
     .adv__text1 {
         text-align: left;
-        font-size: 6px;
+        font-size: 8px;
         font-weight: 300;
-        margin-top: 7px;
+        margin-top: 5px;
         margin-bottom: 7px;
-        margin-left: 4px;
+        margin-left: 6px;
         margin-right: 5px;
         color: black;
     }
 
     .adv__text2 {
         text-align: left;
-        font-size: 6px;
+        font-size: 8px;
         font-weight: 300;
         margin-top: 4px;
         margin-bottom: 7px;
-        margin-left: 4px;
+        margin-left: 6px;
         margin-right: 5px;
         color: black;
     }
 
     .adv__text3 {
         text-align: left;
-        font-size: 6px;
+        font-size: 8px;
         font-weight: 300;
         margin-top: 4px;
         margin-bottom: 7px;
-        margin-left: 4px;
+        margin-left: 6px;
         margin-right: 5px;
         color: black;
     }
@@ -1772,6 +1771,8 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 30px;
         font-weight: 300;
         color: black;
+        
+        text-decoration: none;
     }
 
     .contact2 {
@@ -1869,6 +1870,8 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 30px;
         font-weight: 300;
         color: black;
+        
+        text-decoration: none;
     }
 
     .contact2 {
@@ -1966,6 +1969,8 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 14px;
         font-weight: 300;
         color: black;
+        
+        text-decoration: none;
     }
 
     .contact2 {
